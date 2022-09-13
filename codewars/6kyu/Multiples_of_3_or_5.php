@@ -7,11 +7,6 @@ function solution($number){
   for ($i = 1; $i < $number; $i++) {
     $temp = $number - $i;
     
-    if ($temp % 3 == 0 && $temp % 5 == 0) {
-      $sum += $temp;
-      continue;
-    }
-    
     if ($temp % 3 == 0 || $temp % 5 == 0) {
       $sum += $temp;
     }
